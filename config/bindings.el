@@ -28,10 +28,15 @@
 
 (setq org-todo-keyword-faces
       (quote (("➜" :foreground "red"       :weight bold)
-	      ("✈" :foreground "goldenrod" :weight bold)
-	      ("✔" :foreground "forest green"))))
+              ("✈" :foreground "goldenrod" :weight bold)
+              ("✔" :foreground "forest green"))))
 
 (setq org-priority-faces
       '((?A . (:foreground "red"))
-	(?B . (:foreground "#00BB00" ))
-	(?C . (:foreground "blue" ))))
+        (?B . (:foreground "#00BB00" ))
+        (?C . (:foreground "blue" ))))
+
+
+;;;;;;; ClojureScript Customization
+
+(add-to-list 'auto-mode-alist '("\.cljs$" . clojure-mode))
