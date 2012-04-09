@@ -40,3 +40,23 @@
 ;;;;;;; ClojureScript Customization
 
 (add-to-list 'auto-mode-alist '("\.cljs$" . clojure-mode))
+
+;;;;;;; CoffeeScript Customization
+
+;; Must have coffeescript installed for this to work
+
+(add-to-list 'load-path "~/.emacs.d/lib/coffee-mode")
+
+(require 'coffee-mode)
+
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+
+(defun coffee-custom ()
+  "coffee-mode-hook"
+  (setq coffee-args-compile '("-c" "--bare"))
+  (set (make-local-variable 'tab-width) 2))
+
+(add-hook 'coffee-mode-hook
+            '(lambda () (coffee-custom)))
