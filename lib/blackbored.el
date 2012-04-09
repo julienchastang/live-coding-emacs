@@ -56,8 +56,8 @@
      (gui-element ((t (:background "#333333" :foreground "#96CBFE"))))
 ;;     (region ((t (:foreground "black" :background "#7F073F"))))
      (region ((t ( :background "#7F073F"))))
-     (mode-line ((t (:background "gray10" :foreground "#4c83ff"))))
-     (mode-line-inactive ((t (:background "gray10" :foreground "gray30"))))
+     (mode-line ((t (:background  "blue" :foreground "#4c83ff"))))
+     (mode-line-inactive ((t (:background "blue" :foreground "gray30"))))
 
      (highlight ((t (:background "DarkOrange"))))
      (isearch ((t (:background "deep pink" :foreground "black"))))
